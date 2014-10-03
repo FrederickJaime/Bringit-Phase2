@@ -1,0 +1,166 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<?php echo $this->headTitle('Bring it | '. $this->translate('Canon'))->setSeparator(' | ')->setAutoEscape(false) ?>
+
+	<?php echo $this->headMeta()
+	->appendName('viewport', 'width=960')
+	->appendName('description', 'Share your photographs and Full HD video with #bringit and show the world. Come July, your creativity can be featured here and wherever we bring it next.')
+	->appendName('keywords', 'canon, bringit, bring it, canon photos, canon photography, canon video, canon videos, canon how to video, canon how to videos')
+	->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+	?>
+
+	<!-- social sharing metadata -->
+<meta property="og:title" content="Bring It | Canon"/>
+<meta property="og:image" content="http://bringit.usa.canon.com/img/socialshare_thumb.jpg"/>
+<meta property="og:site_name" content="http://bringit.usa.canon.com"/>
+<meta property="og:description" content="Share your photographs and Full HD video with #bringit and show the world. Soon your creativity can be featured here and wherever we bring it next."/>
+	
+	<!-- Le styles -->
+	<?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+	->prependStylesheet($this->basePath() . '/css/ie.css', 'screen', 'lt IE 9')
+	->prependStylesheet($this->basePath() . '/css/base.css')	
+                        //->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+                        //->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
+
+                        <!-- JavaScripts -->
+                        <?php echo $this->headScript()
+            			//->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                        ->prependFile($this->basePath() . '/js/modernizr.custom.js')
+                        ->prependFile($this->basePath() . '/js/jquery.min.js')
+                        ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                        ->prependFile($this->basePath() . '/js/sliceshiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
+                        ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
+                        ; ?>
+                        <!-- Google Analytics -->
+                        <script>
+				  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				 
+				  ga('create', 'UA-33989236-3', 'bringit.usa.canon.com');
+				  ga('send', 'pageview');
+				 
+				</script>
+
+                      </head>
+                      <body>
+                        <div id="v-flow">
+                        	<div id="video-holder">
+                            <h2>#bringit</h2>
+                            <div class="tip">
+                              <p class="tip-number"></p>
+                              <p class="tip-copy"></p>
+                            </div>
+                            <img class="closeBtn" src="../img/close_btn.png" alt="Close"/>
+                        		<div id="video-player"></div>
+                        	</div>
+                        </div>
+                      	<div id="video-cover"></div>
+
+
+                        <div id="scroll-nav">
+
+                          <div id="nav">
+
+                            <div id="left-nav"></div>
+                            <div id="right-nav"></div>
+
+
+                          </div>
+
+                          <div id="bg">
+                          </div>
+
+                        </div>
+
+
+                      	<div id="around-strap"><div class="strap"></div></div>
+                      	<header class="site-header">	
+                      		<div class="container">
+                      			<!--<div class="ribbon"></div>-->
+                      			
+                      			
+                      			<ul id="site-nav-top">
+                      				<li class="first"><a class="canon-logo" href="http://usa.canon.com/consumer" target="_blank"></a></li>
+                              <li><a class="h_icon" href="<?php echo $this->url('home') ?>" target="_self"><img src="img/i_home.png"/></a></li>
+                      				<li><a href="/With-Your-Family" class="family" target="_self">with your family</a></li>
+                      				<li><a href="/When-You-Travel" class="travel" target="_self">when you travel</a></li>
+                      				<li class="last"><a href="/In-The-Moment" class="moment" target="_self">in the moment</a></li>
+                      			</ul>
+
+                      			<div class="bringit-logo"></div>
+                      			
+                      				<ul class="site-nav">
+                      					<li>
+                      						<a href="http://shop.usa.canon.com/shop/en/catalog/cameras?cm_mmc=Microsite-_-EOS-_-0518121-_-BringItDirect" class="shop-now" target="_blank">Shop Now</a>
+                      					</li>
+                      					<li id="social-follow">
+                      						<a class="shop-now">Follow</a>
+                      						<div>
+                      							<a href="https://www.facebook.com/CanonUSA" target="_blank" class="facebook"><img src="../img/i-facebook.png" alt="Facebook"/></a>
+
+                      							<a href="https://twitter.com/CanonUSAimaging" target="_blank" class="twitter"><img src="../img/i-twitter.png" alt="Twitter"/></a>
+
+                      							<a href="https://www.youtube.com/CanonUSA" target="_blank" class="youtube"><img src="../img/i-youtube.png" alt="YouTube"/></a>
+                      						</div>
+                      					</li>
+                      					<li id="social-share">
+                      						<a class="shop-now">share</a>
+                      						<div>
+                      							<a href="#" target="_blank" class="facebook"><img src="../img/i-facebook.png" alt="Facebook"/></a>
+                      							<a href="#" target="_blank" class="twitter"><img src="../img/i-twitter.png" alt="Twitter"/></a>
+                      							<a href="#" target="_blank" class="google"><img src="../img/i-google.png" alt="Google+"/></a>
+                      							<a href="#" target="_blank" class="mail"><img src="../img/i-mail.png" alt="Mail+"/></a>
+                      						</div>
+                      					</li>
+                      				</ul>
+                      			
+                      		</div>			
+                      	</header>
+                      	<section id="main">
+
+                      		<div class="container">
+                      			<?php echo $this->content; ?>	    		
+                      		</div>
+                      		<img id="scroll-arrow" src="img/scroll_arrow.png"/>
+                      	</section>
+                      	<div class="container cf">
+                      		<div class="bottom-callout">
+                      			<h4 class="hashtag">#BRINGIT</h4>
+			<!--<ul id="social-bottom" class="social">
+				<li><a href="https://www.facebook.com/CanonUSA" class="fb" target="_blank"></a></li>
+				<li><a href="https://twitter.com/CanonUSAimaging" class="twitter" target="_blank"></a></li>
+				<li><a href="https://www.youtube.com/CanonUSA" class="youtube" target="_blank"></a></li>
+			</ul>-->
+		</div>
+	</div>
+	<footer class="site-footer">
+		<div class="container cf">
+			<ul class="footer-links">
+				<li><a class="terms" href="http://usa.canon.com/cusa/about_canon/standard_display/abtcan_lgl_termsOfUse_misc" target="_blank">Terms and Conditions</a></li>
+				<li><a class="privacy" href="http://usa.canon.com/cusa/about_canon/standard_display/abtcan_lgl_privacy_misc" target="_blank">Privacy Statement</a></li>
+        <li><a class="canon" href="http://usa.canon.com/consumer" target="_blank">canon usa</a></li>
+			</ul>
+			<p class="legal">&copy; <?php echo date('Y') ?> Canon <?php echo $this->translate('All rights reserved.') ?></p>
+		</div>
+	</footer>
+	<div id="fl_tracking"></div>
+  
+	<?php echo $this->inlineScript() 
+	->prependFile($this->basePath() . '/js/tracking.js')
+	->prependFile($this->basePath() . '/js/site.js')  
+	->prependFile($this->basePath() . '/js/siteSections.js')  
+	->prependFile($this->basePath() . '/js/jQuery.tubeplayer.min.js')
+//->prependFile($this->basePath() . '/js/animOnScroll.js')
+	->prependFile($this->basePath() . '/js/classie.js')        	 
+	//->prependFile($this->basePath() . '/js/imagesloaded.js')
+//  ->prependFile($this->basePath() . '/js/masonry.pkgd.min.js')
+	                     
+	; ?>
+
+</body>
+</html>

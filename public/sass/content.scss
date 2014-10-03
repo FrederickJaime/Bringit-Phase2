@@ -1,0 +1,755 @@
+#main {
+	padding-bottom: 20px;
+	margin-top: 150px;	
+	.leading {
+		text-align: center;
+		font-family: $sans-serif;
+		font-size: 17px;
+		line-height: 1.2em;
+		color: $brand-black;
+
+		
+		padding: 30px 0 0;
+		/**/
+		max-width: 650px;
+		
+		margin: 160px auto 20px auto;
+	}
+	.sep {
+		width: 940px;
+		height: 1px;
+		margin: 19px auto;
+		background: $brand-grey-lightest;
+	}
+	/*	TOP VIDEO POSTER : BEGIN */
+	.video-holder
+		{
+			position:relative;
+			width:100%;
+			margin:0px auto;
+			height:479px;
+			padding:0px;
+			background:#000;
+			cursor:pointer;
+			
+			
+			
+			.poster
+				{
+					position:absolute;
+					top:0px;
+					left:0px;
+					z-index:2;
+					width: 100%;
+				}
+			
+		}
+	
+	/* TOP VIDEO POSTER: END */
+	
+	/* CATEGORIES : BEGIN */
+	.categories
+		{
+			position:relative;
+			width:940px;
+			height:auto;
+			margin:0px auto 28px auto;
+			
+			
+			
+			
+			.cats
+				{
+					position:relative;
+					width:100%;
+					height:170px;
+
+					cursor:pointer;
+					z-index: 1;
+					margin-bottom: 19px;
+					
+					
+				}
+
+
+			.label
+				{
+					position: absolute;
+					font-size: 20px;
+					font-weight: 700;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					top: 73px;
+					right: 15px;
+					color: #fff;
+					z-index: 4;
+					opacity: 0;
+					
+					
+				}
+			.ro
+				{
+					position: absolute;
+					top:0px;
+					left: 0px;
+					width: 100%;
+					height:100%;
+					background: #ffffff;
+					z-index: 3;
+					opacity: 0;
+
+				}
+
+			.btn
+				{
+					position: absolute;
+					top: 78px;
+					right: 13px;
+					width: auto;
+					height: 35px;
+					
+					color: #fff;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					font-weight: 400;
+					z-index: 2;
+					text-align: center;
+					
+					
+							
+						&:after
+						{
+							content: '\25B6';
+							color: lighten($brand-red,10%);
+							width: 12px;
+							height: 14px;
+							
+							position: relative;
+							right: 0;
+							margin-left: 8px;
+							bottom: 1px;
+							font-size: 12px;
+							border-width: 0;
+						}
+						
+			
+
+					
+
+				}
+			
+			#cat-1
+				{
+					
+					background: url(../img/category_family.jpg) left top no-repeat;
+				}
+			
+			#cat-2
+				{
+					
+					background: url(../img/category_travel.jpg) center top no-repeat;
+					
+				}
+
+			#cat-3
+				{
+					
+					background: url(../img/category_moment.jpg) center top no-repeat;
+				}
+
+		}
+		.page-dividers
+			{
+				position: relative;
+				width: 940px;
+				
+				margin: 0px auto -5px auto;
+				border-bottom: 1px solid $brand-grey-light;
+				padding-bottom: 8px;
+			
+				p
+				{
+					@include inline-block;
+					padding-left: 14px;
+					color: $brand-black;
+					font-size: 16px;
+					letter-spacing: 1px;
+				}
+
+				.hashtag
+				{
+					text-transform: uppercase;
+					color: $brand-red;
+					font-weight: 700;
+					letter-spacing: 2px;
+					font-size: 21px;
+					padding: 5px 14px 5px 0px;
+					border-right:1px solid $brand-grey-light;
+
+				}
+			}
+
+	/* CATEGORIES : END */
+	
+
+	/* SECTIONS : BEGIN */
+
+	.section-dividers
+			{
+				position: relative;
+				width: 940px;
+				
+				margin: 0px auto -5px auto;
+				border-bottom: 1px solid $brand-grey-light;
+				padding-bottom: 8px;
+			
+				p
+				{
+					@include inline-block;
+					padding-left: 14px;
+					color: $brand-black;
+					font-size: 16px;
+					letter-spacing: 1px;
+				}
+
+				.hashtag
+				{
+					text-transform: uppercase;
+					color: $brand-red;
+					font-weight: 700;
+					letter-spacing: 2px;
+					font-size: 21px;
+					padding: 5px 14px 5px 0px;
+					
+
+				}
+			}
+
+	.page-header
+		{
+			position: relative;
+			display: block;
+			width: 940px;
+			height: 35px;
+			margin:190px auto 18px auto;
+			background: $brand-black;
+			color:#ffffff;
+			font-size: 21px;
+			font-weight: 700;
+			padding: 7px 20px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+
+		}
+
+	.page-hero
+		{
+			position: relative;
+			width: 940px;
+			height: 347px;
+			margin:0px auto 18px auto;
+			cursor: pointer;
+
+			div
+				{
+				position: relative;
+				float: left;
+				margin:0px;
+				
+				}
+
+			.video-poster
+				{
+				width: 620px;
+				height: 100%;
+				margin:0px;
+				}
+			.video-description
+				{
+				width: 320px;
+				height:100%;
+				color: $brand-black;
+				padding: 83px 0 0 36px;
+
+				.title
+					{
+						font-size: 23px;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-weight: 700;
+					}
+				.director
+					{
+						font-size: 12px;
+						font-style: italic;
+						letter-spacing: 1px;
+						font-weight: lighter;
+					}
+				.body-copy
+					{
+						position: relative;
+						width: 280px;
+						margin: 15px 0px;
+						font-size: 14px;
+						letter-spacing: 1px;
+						font-weight:lighter;
+						line-height: 18px;
+						
+
+					}	
+
+				.cta
+					{
+						position: relative;
+						font-size: 12px;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						font-weight:lighter;
+						top: 5px;
+						color: #fff;
+						background: $brand-red;
+						padding: 8px;
+						left: 0px;
+
+						&:hover
+							{
+								background:$brand-grey-dark;
+							}
+
+						&:after
+						{
+							content: '\25B6';
+							
+							width: 12px;
+							height: 14px;
+							
+							position: relative;
+							right: 0;
+							margin-left: 6px;
+							bottom: 1px;
+							font-size: 10px;
+							border-width: 0;
+						}
+
+						
+					}	
+
+
+				}
+		}
+
+
+	.page-hero-screens
+		{
+			position: relative;
+			width: 940px;
+			height: 199px;
+			margin:0px auto 60px auto;
+
+
+			div
+				{
+					position: relative;;
+					float: left;
+					background: #fff;
+					width: 300px;
+					height: 100%;
+
+					img
+						{
+							cursor: pointer;
+						}
+				}
+			.center-screen
+				{
+					margin:0px 18px;
+				}
+		}
+
+	
+
+
+	.showcase
+		{
+			position: relative;
+			width: 940px;
+			height: 355px;
+			margin:28px auto 18px auto;
+			background: #fff;
+
+			div
+				{
+					
+					position: relative;
+					width: 100%;
+					float: left;
+
+
+				}
+
+			.img-gallery
+				{
+					
+					position: relative;
+					
+					height: 313px;
+					background: #fff;
+					overflow: hidden;
+
+					.carousel-cover
+						{
+							position: absolute;;
+							width: 100%;
+							height: 100%;
+							top: 0px;
+							left: 0px;
+							z-index: 3;
+							visibility: hidden;
+						}
+					
+					.mages
+						{
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							z-index: 1;
+							background: #fff;
+
+
+							img
+								{
+									position: relative;
+									float: left;
+									cursor: pointer;
+								}
+							.description
+								{
+									padding-top: 0px;
+									position: relative;
+									float: left;
+									width: 50%;
+
+									p
+										{
+											position: relative;
+											width: 440px;
+											font-size: 13px;
+											line-height: 16px;
+											letter-spacing: 1px;
+											font-weight:lighter;
+											
+										}
+									.title
+										{
+											font-size: 16px;
+											text-transform: uppercase;
+											letter-spacing: 1px;
+											line-height: 17px;
+											width: 75%;
+											font-weight: 700;
+											margin-bottom: 4px;
+										}
+									.sub-heads
+										{
+											font-size: 16px;
+											text-transform: uppercase;
+											letter-spacing: 2px;
+											font-weight: 700;
+											margin: 16px 0 4px 0;
+										}
+
+								}
+
+
+						}
+				}
+			
+
+
+			.img-gallery-nav
+				{
+					position: relative;
+					
+					width: 100%;
+					height: 44px;
+					
+					margin-bottom: 18px;
+					padding:11px 0 0 47%;
+
+
+				
+					.dot
+						{
+							position: relative;
+							width: 14px;
+							height: 14px;
+							margin: 0px 2px;
+							background: #c1c1c1;
+							cursor: pointer;
+							
+
+
+
+
+						}
+
+					.showcase-arrow-btn
+						{
+							position: relative;
+							 float: left;
+							cursor: pointer;
+							top:-1px;
+						}
+					#arrowR
+						{
+							margin-left:10px;
+						}
+					#arrowL
+						{
+							margin-right:10px;
+						}
+
+				}
+			
+		}
+
+	.main-prod
+		{
+			position: relative;
+			display: block;
+			width: 940px;
+			height: 362px;
+			background: $brand-black;
+			margin: 0px auto 58px auto;
+
+			img
+				{
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					z-index: 1
+				}
+			.cta
+				{
+					top: 223px;
+					left: 60px;
+					z-index: 2;
+				}
+
+			#prod-2-cta
+				{
+					top: 250px;
+					left: 40px;
+					z-index: 2;	
+				}
+			#prod-3-cta
+				{
+					top: 252px;
+					left: 60px;
+					z-index: 2;	
+				}
+		}
+
+
+	.learn-how
+		{
+			position: relative;
+			width: 940px;
+			height: 278px;
+			
+			margin: 24px auto 24px auto;
+
+
+			#tutorial-wrapper
+				{
+					position: relative;
+					width: 100%;
+					height: 236px;
+					
+					overflow: hidden;
+					margin: 0px auto;
+					.carousel-cover
+						{
+							position: absolute;;
+							width: 100%;
+							height: 100%;
+							top: 0px;
+							left: 0px;
+							z-index: 3;
+							visibility: hidden;
+						}
+					.arrow-btn
+						{
+							position: absolute;
+							top: 32%;
+							z-index: 3;
+							opacity:0;
+							cursor: pointer;
+						}
+					#arrowR
+						{
+							right:0px;
+						}
+					#arrowL
+						{
+							left:0px;
+						}
+					.tutorial-hide
+						{
+							position: absolute;
+							height: 100%;
+							width: 278px;
+							background: #fff;
+							z-index: 2;
+						}
+					#hide-right
+						{
+							right: 0px;
+							width: 280px;
+						}
+					#video-btn
+						{
+							left:278px;
+							width: 380px;
+							background: none;
+							cursor: pointer;
+							z-index: 5;
+
+							img
+								{
+									position: relative;
+									top: 33%;
+									left: 40%;
+								}
+						}
+					#hide-left
+						{
+							left: 0px;
+						}
+					.tuts
+						{
+							position: absolute;
+							left: 0px;
+							
+							top: 0px;
+							
+							z-index: 1;
+							
+
+						}
+
+				}
+
+			.tutorial-gallery-nav
+				{
+					position: relative;
+					
+					width: 100%;
+					height: 44px;
+					
+					margin-bottom: 18px;
+					padding:11px 0 0 47%;
+					
+
+				
+					.dot
+						{
+							position: relative;
+							width: 15px;
+							height: 15px;
+							margin: 0px 2px;
+							background: #c1c1c1;
+							float: left;
+							cursor: pointer;
+							overflow: hidden;
+
+							img
+								{
+									position: absolute;
+									top: 0px;
+									left: 0px;
+								}
+
+
+						}
+					.arrow-btn
+						{
+							position: relative;
+							 float: left;
+							cursor: pointer;
+							top:-1px;
+						}
+					#arrowR
+						{
+							margin-left:10px;
+						}
+					#arrowL
+						{
+							margin-right:10px;
+						}
+
+				}
+
+			.family
+				{
+					#tutorial-7{ left:-120px;}
+					#tutorial-1{ left:280px;}
+					#tutorial-2{ left:680px;}
+					#tutorial-3,#tutorial-5,#tutorial-6,#tutorial-4{ left:-520px;}
+				}
+			.travel
+				{
+					#tutorial-9{ left:-120px;}
+					#tutorial-1{ left:280px;}
+					#tutorial-2{ left:680px;}
+					#tutorial-3,#tutorial-5,#tutorial-6,#tutorial-4,#tutorial-7,#tutorial-8{ left:-520px;}
+				}
+			.moment
+				{
+					#tutorial-4{ left:-120px;}
+					#tutorial-1{ left:280px;}
+					#tutorial-2{ left:680px;}
+					#tutorial-3{ left:-520px;}
+
+				}
+
+			
+		}
+	/* SECTIONS : END */;
+
+	
+	
+	/* ROLLOVERS : BEGIN*/
+		
+			
+		.prod
+			{
+				position:relative;
+				z-index:2;
+				left:0px;
+			}
+		
+		.cta
+			{
+				position:absolute;
+				
+				z-index:3;
+				left:30px;
+				bottom:32px;
+			}
+		
+	
+		
+		#prod-4	
+			{
+				.cta
+				{
+					left:28px;
+					bottom:30px;
+				}
+			}
+		
+	
+	/* ROLLOVERS : END*/
+	
+}

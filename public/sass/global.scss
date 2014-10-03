@@ -1,0 +1,45 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+body {
+	font-family: $sans-serif;
+	margin-top: 135px;
+	color: #000;
+	background: #fff;
+}
+
+.cf {
+	@include clearfix;
+}
+
+a {
+	color: #aaa;
+	text-decoration: none;
+	&:hover, &:active {
+		color: #333;
+	}
+}
+
+.container {
+	width:940px;
+	margin: 0 auto;
+	font-size:16px;
+	color: $brand-black;
+	.row {
+		@include clearfix;
+	}				
+}
+
+/* SCROLL ARROW : BEGIN */		
+#scroll-arrow {
+	position:fixed;
+	right: 50px;
+	//top: 50%;
+	//margin-top: -18px;
+	bottom: 50px;
+	opacity:0;
+	cursor: pointer;
+	z-index:99999;
+}		
+/* SCROLL ARROW : END */
+

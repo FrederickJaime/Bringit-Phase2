@@ -1,0 +1,578 @@
+	
+	
+	#video-cover
+		{
+			position: absolute;
+			top: 0px;
+			height: 0%;
+			width: 0%;
+			left:0px;
+			background: #000;
+			opacity:0;
+			z-index: 7;
+			visibility: hidden;
+
+
+		}
+	#v-flow
+		{
+		position:absolute;
+		width: 100%;
+		height: 100%;
+		overflow:hidden;
+		top: 0px;
+		left: 0px;
+
+		}
+	#video-holder
+		{
+			position: absolute;
+			top: 0px;
+			left: 0px;			
+			width: 930px;
+			height: 597px;
+			background: #fff;
+			z-index: 8;
+			visibility: hidden;
+			opacity: 0;
+
+			.tip
+				{
+					position: absolute;
+					max-width: 672px;
+					bottom: 30px;
+					font-size: 14px;
+					height: auto;
+					visibility: hidden;
+					
+					
+
+					.tip-number
+						{
+							position:absolute;
+							top: 0px;
+							left: -45px;
+							text-transform: uppercase;
+							font-weight: 700;
+							text-align: left;
+							margin-right: 10px;
+							width: 80px;
+						}
+					.tip-copy
+						{
+							position: relative;
+							
+							width:auto;
+							
+							text-align: left;
+							font-weight: 400;
+							
+						}
+				}
+			h2
+				{
+					position: relative;
+					color:$brand-red;
+					font-weight: 700;
+					text-transform: uppercase;
+					font-size: 24px;
+					margin: 15px 0 15px 23px;
+					letter-spacing: 1px;
+				}
+
+			.closeBtn
+				{
+					position: absolute;
+					top:14px;
+					right: 23px;
+					cursor: pointer;;
+				}
+			#video-player
+			 {
+			 	position: relative;
+			 	width: 880px;
+			 	height: 518px;
+			 	background:#fff;
+			 	margin:0px auto; 
+			 }
+		}
+
+	#around-strap
+		{
+			position: absolute;
+			width: 100%;
+			min-width: 940px;
+			overflow: hidden;
+			height: 300px;
+			top: 0px;
+			left: 0px;
+			z-index: 1;
+			
+
+			.strap {
+
+		
+		@include rotate(-5deg);
+		background: url(../img/strap_longb.jpg) no-repeat left;
+		position: absolute;
+		top: 60px;
+		left:50%;		
+		width: 2904px;/*1579*/
+		height: 95px;
+		margin-left:-1730px;/*-885*/
+		z-index: 1;
+
+	}
+		}
+
+
+#scroll-nav
+	{
+		position: fixed;
+		top: -46px;
+		left: 0px;
+		height: 46px;
+		width: 100%;
+		background: #fff;
+		z-index: 6;
+		a
+			{ color: $brand-black}
+		#nav
+			{
+				position: relative;
+				width: 940px;
+				height: 100%;
+				margin: 0px auto;
+
+
+				#left-nav
+				{
+					position: relative;
+					float: left;
+					width: auto;
+
+
+					#site-nav-top
+						{
+							position: relative;
+							left: 0px;
+							top: 12px;
+							font-size: 12px;
+							font-weight: 700;
+							z-index: 1;
+							text-transform: uppercase;
+
+
+						li
+							{
+								float: left;
+								height: 27px;
+								padding: 8px 13px 0 13px;
+								border-right:1px solid $brand-grey-light;
+
+
+								a
+									{
+										&:hover
+											{
+												color:$brand-anchor-ro;
+											}
+										&:active
+											{
+												color:$brand-red;
+											}
+									}
+
+								
+							}
+						.first
+							{
+								padding:3px 13px 0px 0px;
+							}
+						.last
+							{
+								border-right: none;
+							}
+						.canon-logo
+							{
+								background: url(../img/canon-logo.png) no-repeat center center;
+								
+								top: 2px;
+								width: 80px;
+								height: 20px;
+								display: block;
+
+
+							}
+
+						}
+
+
+
+
+				}
+
+				#right-nav
+					{
+						position: relative;
+						float: right;
+						width: auto;
+
+
+
+
+							.site-nav {
+								position: relative;
+								right: 0px;
+								top: 12px;
+								width: auto;
+								font-weight: 700;
+								padding: 0px;
+
+								li
+									{
+										position: relative;;
+										float: left;
+										padding: 5px 0 0 0;
+										height: 27px;
+										overflow: hidden;
+									}
+								#social-follow
+									{
+										border-right:1px solid $brand-grey-light;
+										border-left:1px solid $brand-grey-light;
+										text-align: left;
+										padding-left: 13px;
+										
+										width: 150px;
+
+										div
+											{
+												position: absolute;
+												right: 12px;
+												top: 5px;
+												height: 100%;
+												background: #fff;
+
+												img 
+													{
+														height:17px;
+														margin: 0px 1px;
+													}
+											}
+
+									}
+								#social-share
+									{
+										padding-left: 13px;
+										width: 73px;
+										padding-right: 6px;
+										font-weight: 700;
+
+										div
+											{
+												position: absolute;
+												right: -104px;
+												top: 5px;
+												height: 100%;
+												background: #fff;
+
+												img 
+													{
+														height:17px;
+														margin: 0px 1px;
+													}
+											}
+
+									}
+								.shop-now {
+									@include transition(all 0.3s ease-in-out);
+									font-size: 12px;
+									font-weight: 700;
+									text-transform: uppercase;
+									color: $brand-black;
+									position: relative;
+									margin-right: 8px;
+
+									padding-right: 20px;
+									&:before {
+										@include transition(all 0.3s ease-in-out);
+										content: '\25B6';
+										color: lighten($brand-red,10%);
+										width: 12px;
+										height: 14px;
+										display: block;
+										position: absolute;
+										top:0px;
+										right: 0;
+										bottom: 1px;
+										font-size: 13px;
+										border-width: 0;
+									}
+									/*&:hover {
+										color: $brand-red;
+										&:before {
+											color: $brand-black;
+										}
+									}*/
+								}
+								/*ul.social {	
+									@include inline-block;
+									float: right;
+									li {
+										@include inline-block;
+										font-size: 14px;
+									}
+								}*/
+							
+							}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					}
+			}
+
+
+
+		#bg
+			{
+				position: absolute;
+				bottom: -1px;
+				width: 100%;
+				height: 2px;
+				background: #000;
+			}
+	}
+
+.site-header {
+	position:absolute;
+	/*background-color: rgba(255,255,255,.95);*/
+	width: 100%;
+	min-width: 940px;
+	height: 135px;
+	z-index: 1;
+	
+
+	top: 0;
+	
+	&.scroll {
+		-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+		-moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+	}
+	.container {
+		position: relative;
+		width: 940px;
+
+	}
+	/*.ribbon {
+		@include rotate(-5deg);
+		background: url(../img/header-ribbon.png) no-repeat;
+		position: absolute;
+		//top: -80px;
+		top: 0;
+		left: 50%;		
+		width: 1617px;
+		//height: 247px;
+		height: 95px;
+		margin-left: -808px;
+		z-index: -1;
+	}*/
+
+
+	#site-nav-top
+		{
+			position: relative;
+			left: 0px;
+			top: 12px;
+			font-size: 12px;
+			font-weight: bold;
+			z-index: 1;
+			text-transform: uppercase;
+
+		a
+			{ color: $brand-black}
+
+		li
+			{
+				float: left;
+				height: 27px;
+				padding: 8px 13px 0 13px;
+				border-right:1px solid $brand-grey-light;
+
+				a
+					{
+						&:hover
+							{
+								color:$brand-anchor-ro;
+							}
+						&:active
+							{
+								color:$brand-red;
+							}
+					}
+			}
+		.first
+			{
+				padding:3px 13px 0px 0px;
+			}
+		.last
+			{
+				border-right: none;
+			}
+		.canon-logo
+			{
+				background: url(../img/canon-logo.png) no-repeat center center;
+				
+				top: 2px;
+				width: 80px;
+				height: 20px;
+				display: block;
+
+
+			}
+
+		}
+
+	
+	.bringit-logo {
+		@include rotate(-5deg);
+		//background: url(../img/bringit-logo.png) no-repeat;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		z-index: 10;
+		width: 269px;
+		height: 60px;
+		display: block;
+		
+		z-index: 6;
+	}
+	.site-nav {
+		position: absolute;
+		right: 0px;
+		top: 110px;
+		width: auto;
+		font-weight: 700;
+		padding: 0px;
+
+		li
+			{
+				position: relative;;
+				float: left;
+				padding: 5px 0 0 0;
+				height: 27px;
+				overflow: hidden;
+				font-weight: 700;
+
+				.shop-now
+					{
+						&:hover
+							{
+								color:$brand-anchor-ro;
+							}
+
+					}
+			}
+		#social-follow
+			{
+				border-right:1px solid $brand-grey-light;
+				border-left:1px solid $brand-grey-light;
+				text-align: left;
+				padding-left: 13px;
+				
+				width: 150px;/*85*/
+
+				div
+					{
+						position: absolute;
+						right: 12px;/*-74*/
+						top: 5px;
+						height: 100%;
+						background: #fff;
+
+						img 
+							{
+								height:17px;
+								margin: 0px 1px;
+							}
+					}
+
+			}
+		#social-share
+			{
+				padding-left: 13px;
+				width: 73px;
+				padding-right: 6px;
+				
+				
+				
+				div
+					{
+						position: absolute;
+						right: -104px;
+						top: 5px;
+						height: 100%;
+						background: #fff;
+
+						img 
+							{
+								height:17px;
+								margin: 0px 1px;
+							}
+					}
+
+			}
+		.shop-now {
+			@include transition(all 0.3s ease-in-out);
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: $brand-black;
+			position: relative;
+			margin-right: 8px;
+			padding-right: 20px;
+			&:before {
+				@include transition(all 0.3s ease-in-out);
+				content: '\25B6';
+				color: lighten($brand-red,10%);
+				width: 12px;
+				height: 14px;
+				display: block;
+				position: absolute;
+				top:0px;
+				right: 0;
+				bottom: 1px;
+				font-size: 13px;
+				border-width: 0;
+			}
+			/*&:hover {
+				color: $brand-red;
+				&:before {
+					color: $brand-black;
+				}
+			}*/
+		}
+		/*ul.social {	
+			@include inline-block;
+			float: right;
+			li {
+				@include inline-block;
+				font-size: 14px;
+			}
+		}*/
+	
+	}
+}

@@ -1,0 +1,72 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+
+#around-strap
+		{
+		
+			
+
+			.strap {
+
+		top: -65px;
+		left: 50%;
+		 /* IE8+ - must be on one line, unfortunately */ 
+	   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.9961946980917454, M12=0.08715574274765876, M21=-0.08715574274765876, M22=0.9961946980917454, SizingMethod='auto expand')";
+	   
+	   /* IE6 and 7 */ 
+	   filter: progid:DXImageTransform.Microsoft.Matrix(
+	            M11=0.9961946980917454,
+	            M12=0.08715574274765876,
+	            M21=-0.08715574274765876,
+	            M22=0.9961946980917454,
+	            SizingMethod='auto expand');
+		z-index: 1;
+		 /*
+	    * To make the transform-origin be the middle of
+	    * the object.    Note: These numbers
+	    * are approximations.  For more accurate results,
+	    * use Internet Explorer with this tool.
+	    */
+
+	}
+
+	
+}
+#main .leading
+	{
+		max-width:680px;
+	}
+
+	.learn-how
+		{
+			
+
+
+			#tutorial-wrapper
+				{
+					
+					
+					
+					#video-btn
+						{
+							
+
+							img
+								{
+									background: transparent;
+									-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+									filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */      
+									zoom: 1;
+								}
+						}
+					
+
+				}
+		}
+
+
+

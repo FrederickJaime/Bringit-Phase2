@@ -1,0 +1,27 @@
+// Custom Fonts
+@include font-face("AauxPro", font-files("AauxPro/AauxPro-Medium.woff", "AauxPro/AauxPro-Medium.ttf", "AauxPro/AauxPro-Medium.svg"), "AauxPro/AauxPro-Medium.eot", 400);
+@include font-face("AauxPro", font-files("AauxPro/AauxPro-Bold.woff", "AauxPro/AauxPro-Bold.ttf", "AauxPro/AauxPro-Bold.svg"), "AauxPro/AauxPro-Bold.eot", 700);
+
+$sans-serif: "AauxPro", Helvetica, Arial, sans-serif;
+
+// Colors
+$brand-black: #000;
+$brand-grey-dark:#6b6b6b;
+$brand-grey-light: #e5e5e5;
+$brand-grey-lightest: #e7e7e7;
+$brand-red: #e21a22;
+$brand-anchor-ro:#696969;
+
+// Clearfix
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020"; 
+        display: block; 
+        height: 0; 
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }
+}

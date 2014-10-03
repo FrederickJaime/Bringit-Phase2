@@ -1,0 +1,97 @@
+
+#grid-mid
+	{
+		margin: 25px 20px -20px 20px;
+
+		li{cursor: pointer;}
+	
+	}
+.grid-cols
+	{
+		position: relative;
+		margin: 25px auto 0px auto;
+		float: left;
+		
+		li
+			{
+				margin-bottom: 20px;
+				cursor: pointer;
+			}
+	}
+.grid {	
+	list-style: none;
+	margin: 25px auto -0px auto;
+	width: 940px;
+	
+	
+	
+	
+	
+	
+	li 
+		{
+			padding-bottom: 20px;
+			cursor: pointer;
+			opacity: 1;
+			position: relative;
+			float: left;
+			
+
+			
+		}
+	.narrow-li
+		{
+			padding:0px 21px;
+			
+			height: inherit;
+		}
+
+	
+
+	#v4{margin-top: -422px;}
+
+	#p6{margin-top: -450px;}
+
+	// target parent
+	.no-js &, .no-cssanimations & {
+		li {
+			opacity: 1;
+		}
+	}
+
+}
+
+
+
+
+
+/* Effect: opacity */
+.grid.effect-1 li.animate {
+	-webkit-animation: fadeIn 0.65s ease forwards;
+	-moz-animation: fadeIn 0.65s ease forwards;
+	animation: fadeIn 0.65s ease forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	to { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+	to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	to { opacity: 1; }
+}
+
+@media screen and (max-width: 900px) {
+	/*.grid li {
+		width: 50%;
+	}*/
+}
+
+@media screen and (max-width: 400px) {
+	/*.grid li {
+		width: 100%;
+	}*/
+}
